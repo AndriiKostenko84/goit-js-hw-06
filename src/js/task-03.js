@@ -15,6 +15,8 @@ const images = [
 const galleryEl = document.querySelector('.gallery');
 galleryEl.style.gap = "20px";
 galleryEl.style.display = "flex"
+galleryEl.style.flexDirection = 'column';
+
 const gallery = images
 .map(({url, alt}) => `<li><img src="${url}" alt="${alt}" width=640></li>`)
 .join("");
