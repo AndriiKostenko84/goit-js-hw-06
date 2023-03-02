@@ -8,9 +8,14 @@ formLogin.addEventListener('submit', (event) => {
     } = event.currentTarget;
    
     if (email.value === '' || password.value === '') {
-        return alert('All fields must be filled in')
+        return alert('All fields must be filled in');
     }
-    console.log(`Login: ${email.value}, Password: ${password.value}`);
+    const formData = {
+        [email.name]: email.value,
+        [password.name]: password.value
+    };
+    console.log(formData)
+
     event.currentTarget.reset();
 });
 
