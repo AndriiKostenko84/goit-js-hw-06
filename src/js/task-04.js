@@ -8,7 +8,7 @@ counterEl.firstElementChild.addEventListener('click', handleDecrementButtonEl);
 counterEl.lastElementChild.addEventListener ('click', handleIncrementButtonEl);
 
 function  handleDecrementButtonEl () {
-    counterValue =-step;
+    counterValue -=step;
     valueEl.textContent = counterValue;
     console. log('Click on decrement button');
 };
