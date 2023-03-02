@@ -2,9 +2,13 @@ const colorEl = document.querySelector('.color');
 const bodyEl = document.querySelector('body');
 const changeColorBtnEl = document.querySelector('.change-color');
 
+
+
 changeColorBtnEl.addEventListener('click', () => {
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  colorEl.textContent = getRandomHexColor(); 
+  const hexColor = getRandomHexColor();
+  document.body.style.backgroundColor = hexColor;
+  colorEl.textContent = hexColor; 
+  console.log (hexColor);
 });
 
 
